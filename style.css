@@ -1098,3 +1098,71 @@ img, video {
     height: 300px;
   }
 }
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 0 10px;
+  }
+
+  nav a {
+    white-space: nowrap;
+    font-size: 0.75rem;
+  }
+
+  .fotos-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .carousel {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .carousel img {
+    width: 160px;
+    height: 240px;
+  }
+
+  .flip-card-back h3 {
+    font-size: 1.6rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .manias-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  nav a {
+    font-size: 0.7rem;
+  }
+
+  .flip-card-back h3 {
+    font-size: 1.4rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.85rem;
+  }
+
+  .manias-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .carousel img {
+    width: 140px;
+    height: 210px;
+  }
+}
