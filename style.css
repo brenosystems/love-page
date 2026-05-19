@@ -910,24 +910,61 @@ nav a:hover::after {
 
 @media (max-width: 768px) {
 
-  nav {
-    gap: 18px;
-    flex-wrap: wrap;
-    font-size: 0.85rem;
+  header {
+    padding: 10px;
   }
 
-  header {
-    padding: 14px;
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 4px 6px;
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: center;
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 0 10px;
+  }
+
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .carousel {
+    overflow: hidden;
+  }
+
+  .carousel img {
+    width: 180px;
+    height: 260px;
+  }
+
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+  .flip-card {
+    height: 340px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
   }
 
   .abertura-texto h2,
@@ -935,48 +972,42 @@ nav a:hover::after {
   .videos-section h2,
   .manias-section h2,
   .despedida-section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .carousel img {
-    width: 220px;
-    height: 320px;
-  }
-
-  .videos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .flip-card {
-    height: 380px;
-  }
-
-  .cards-container {
-    grid-template-columns: 1fr;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 480px) {
 
+  nav {
+    font-size: 0.7rem;
+    gap: 8px;
+  }
+
   .hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .hero p {
-    font-size: 0.9rem;
-  }
-
-  nav {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   .carousel img {
-    width: 170px;
-    height: 250px;
+    width: 150px;
+    height: 220px;
   }
 
   .flip-card {
-    height: 320px;
+    height: 300px;
   }
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
