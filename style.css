@@ -1011,3 +1011,90 @@ img, video {
   height: auto;
   display: block;
 }
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FIX MOBILE REAL */
+@media (max-width: 768px) {
+
+  header {
+    padding: 12px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .carousel img {
+    width: 180px;
+    height: 260px;
+  }
+
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flip-card {
+    height: 340px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .abertura-texto h2,
+  .fotos-section h2,
+  .videos-section h2,
+  .manias-section h2,
+  .despedida-section h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  nav {
+    font-size: 0.7rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .carousel img {
+    width: 150px;
+    height: 220px;
+  }
+
+  .flip-card {
+    height: 300px;
+  }
+}
